@@ -3,7 +3,7 @@
 """
 Created on Wed May 12 15:45:42 2021
 
-@author: Project
+@author: Peter Handy
 """
 
 
@@ -16,19 +16,22 @@ from tensorflow.keras import layers
 import time
 
 # Check GPU(s) has been detected and is usable.
-print("Num GPUs Available: ", 
-      len(tf.config.experimental.list_physical_devices('GPU')))
 devices = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(devices[0], enable=True)
-tf.config.experimental.set_memory_growth(devices[1], enable=True)
+print("Num GPUs Available: ", 
+      len(devices))
+# There is a bug with Tensorflow and some GPUs such as the 2080 Ti where the memory allocation fails. The following resolves 
+# The bug but is not neseccary with most GPUs.
+for i in range(len(devices)):
+      tf.config.experimental.set_memory_growth(devices[i], enable=True)
 
+      
 # define bufer, batch size, resolution, num of epochs, noise dimension (broken)
 # and number of examples to generate (not fully operational yet)
 
-BATCH_SIZE = 16 #size of batch
-RES = 128 #define resolution of input images (GAN supports square # of 2)
-EPOCHS = 200
-noise_dim = 100 # broken for nopw, leave as is
+BATCH_SIZE = 16 
+RES = 128 # define resolution of input images (GAN supports any square # of 2)
+EPOCHS = 200 # Number of training loops
+noise_dim = 100 # The noise/latent dimension fed into the generator
 num_examples_to_generate = 64 # do not change until fixed generate and save
 seed = tf.random.normal([num_examples_to_generate, noise_dim])
 
