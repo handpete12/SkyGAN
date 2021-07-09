@@ -5,7 +5,23 @@ This repo provides base code for anyone looking to create continuous conditional
 
 This version provides basic functionality required to do this with a conditional generative advisarial network. I will upload my more advanced versions at a later date (once I've tidied them up) with more functionality and conditionalisation methods as well as a non-conditional GAN version. I also have versions that utilise a Wasserstein loss. Contact me if you want access to these before I have had a chance to upload them.
 
+## Dependencies
+Tensorflow 
+Numpy
+Matplotlib
 
+## Usage
+The repo contains a test dataset of 1 batch of GADGET-III simulations from the quijote simulations. This is useful for debugging but is no where near enough to train an effective GAN. To get the full dataset see the Acknowlagements section. 
+Clone the repo
+Create new environment and install dependencies. If want GPU support download the NVIDIA CUDA package for you GPU(s).
+Run the main.py 
+
+To alter the model architecture see Models.py.
+To alter the training procedure see train.py
+To alter the GAN output durning training change the generate_and_save() function in train_monitor.py.
+
+Note: at the time of this project Tensorflow contained a bug that effects the 2080 TI graphics card and others. This is fixed by a line that is commented out in line 
+34 of main.py. 
 ## Model Structure 
 The generator and discriminator have the following structures.
 
