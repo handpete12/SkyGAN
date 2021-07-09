@@ -27,6 +27,6 @@ The non-conditional version produced outputs that were visually indistinguishabl
 
 And the statistics of the resulting density fields were outstanding <2% error at the significant k modes. 
 
-![](images/GAN_output.png)
+![](images/GAN_Stats.png)
 
 
