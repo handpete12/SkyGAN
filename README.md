@@ -3,7 +3,7 @@
 ## About 
 This repo provides base code for anyone looking to create continuous conditional-GAN generated 2D density fields in place of 2LPT or GADGET-III/GADGET-IV simulations of the universe. 
 
-This version provides basic functionality required to do this with a conditional generative advisarial network. I will upload my more advanced version at a later date with more functionality and conditionalisation methods as well as a non-conditional GAN version. I also have versions that utilise a Wasserstein loss. Contact me if you want access to these before I have had a chance to upload them.
+This version provides basic functionality required to do this with a conditional generative advisarial network. I will upload my more advanced versions at a later date (once I've tidied them up) with more functionality and conditionalisation methods as well as a non-conditional GAN version. I also have versions that utilise a Wasserstein loss. Contact me if you want access to these before I have had a chance to upload them.
 
 
 ## Model Structure 
