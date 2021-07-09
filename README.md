@@ -37,4 +37,5 @@ Please reference the code if used in future work. Feel free to contact me for mo
 
 ## Acknowlagements
 
-A massive thankyou to the quijote simulations for prviding the dataset used in this project. If anyone is undertaking a project in computational cosmology then I 100% suggest that you chack out some of their datasets at https://quijote-simulations.readthedocs.io/en/latest/. If you need any help with automated downloads of the datasets then contact me. I have written python programs to that effect. I will try to upload non-sensitive (ips and endpoints) examples of these in the future. 
+A big thankyou to the quijote simulations for prviding the dataset used in this project. If anyone is undertaking a project in computational cosmology then I 100% suggest that you chack out some of their datasets at https://quijote-simulations.readthedocs.io/en/latest/. If you need any help with automated downloads of the datasets then contact me. I have written python programs to that effect. I will try to upload non-sensitive (ips and endpoints) examples of these in the future. 
+
