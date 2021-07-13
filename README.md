@@ -51,7 +51,7 @@ I have more advanced GAN monitoring functions on the way including live summary 
 ## Contact
 Please reference the code if used in future work. Feel free to contact me for more deatils, I have done many months' worth of research in this area and can help with inquiries or if you are stuck. 
 
-## Acknowlagements
+## Acknowledgements
 
 A big thankyou to the quijote simulations for prviding the dataset used in this project. If anyone is undertaking a project in computational cosmology then I 100% suggest that you chack out some of their datasets at https://quijote-simulations.readthedocs.io/en/latest/. If you need any help with automated downloads of the datasets then contact me. I have written python programs to that effect. I will try to upload non-sensitive (ips and endpoints) examples of these in the future. 
 
